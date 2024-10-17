@@ -21,4 +21,4 @@ Ce projet consiste à concevoir et développer un site web pour une chaîne de r
 
 1. Clonez le dépôt :
    ```bash
-   git clone
+   git clone https://github.com/ichrakjaifra/cha-nes_de_restaurants.git
