@@ -107,7 +107,8 @@ section{
 }
 /**********/
 .products {
-  padding: 50px;
+  padding: 5px;
+  margin-top: 80px; 
  /* text-align: center; */
 }
 
@@ -119,11 +120,7 @@ section{
   color: #111111;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
+
 
 .product-card {
   background-image: url("../img/Rectangle 69.png");
@@ -234,7 +231,8 @@ section{
 /***********/
 .explore-more {
   text-align: center;
-  padding: 80px 0;
+  padding: 5px 0;
+  margin-top: 60px;
 }
 
 .explore-more h1 {
@@ -282,8 +280,7 @@ section{
   gap: 20px;
   width:100%;
   /*padding: 0 50px;*/ 
-  padding: 200px;
-  padding-top: 40px;
+  padding: 50px 200px;
 }
 
 .product img {
