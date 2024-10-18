@@ -33,6 +33,13 @@ header{
 	padding: 30px 18%;
 	transition: ease .40s;
 }
+header.sticky{
+  padding: 30px 18%;
+  background: #fff;
+}
+header.sticky ul li a{
+  color: #000;
+}
 .logo{
 	font-size: 35px;
 	font-weight: 600;
@@ -229,6 +236,51 @@ section{
 }
 
 /***********/
+.tabs{
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 400px; */
+  font-size: sans-serif;
+  justify-content: center;
+}
+/* .tabs h1 {
+  font-size: 2.5rem;
+  color: #111111;
+  margin-bottom: 20px;
+  font-family: "Sansita Swashed", system-ui;
+} */
+.tabs-label{
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #5D5D5D;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  padding: 10px;
+  transition: color 0.3s;
+
+}
+.tabs-radio{
+  display: none;
+}
+.tabs-content{
+  order: 1;
+  width: 100%;
+  /* border-bottom: 3px solid #D9D9D9; */
+  line-height: 1.5;
+  font-size: 0.9em;
+  display: none;
+}
+.tabs-radio:checked+.tabs-label{
+  font-weight: bold;
+  color: #933C24;
+  border-bottom: 2px solid #933C24;
+}
+.tabs-radio:checked+.tabs-label+.tabs-content{
+  display: initial;
+}
+/***********/
 .explore-more {
   text-align: center;
   padding: 5px 0;
@@ -246,7 +298,14 @@ section{
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 30px;
+  /* margin-bottom: 1px; */
+  /* border-bottom: 2px solid #E9BD8D;
+  font-size: 20px;
+  font-weight: 600;  */
+}
+.explore-more hr{
+  border: 1px solid #D9D9D9;
+  margin: 0 200px;
 }
 
 .categories a {
@@ -258,6 +317,7 @@ section{
   padding: 10px;
   transition: color 0.3s;
 }
+
 
 .categories a:hover {
   color: #8B4513;
@@ -286,8 +346,8 @@ section{
 .product img {
   /* width: 100%;
   height: auto; */
-  width: 360px 10%;
-  height: 350px 10%;
+  width: 360px;
+  height: 350px; 
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -323,6 +383,7 @@ section{
   height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 
 .cont{
@@ -331,6 +392,9 @@ section{
 }
 .cont h2{
   color: #000; 
+}
+.item img:hover {
+  transform: scale(1.05);
 }
 
 /********/
